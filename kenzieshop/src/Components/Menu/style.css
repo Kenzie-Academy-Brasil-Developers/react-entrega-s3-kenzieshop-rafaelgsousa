@@ -1,0 +1,35 @@
+header {
+    height: 50px;
+    display: flex;
+    min-width:310px;
+    max-width: 720px;
+    margin: 0 auto;
+    border-bottom: 1px solid gray;
+    background-color: #FFFFFD;
+    box-sizing: border-box;
+}
+.logo {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+}
+.menu {
+    list-style: none; 
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+.menu li {
+    margin: 10px;
+    cursor: pointer;
+}
+.menu li span {
+    padding: 10px;
+    background-color: #279D86;
+    color: white;
+    border-radius: 15px;
+}

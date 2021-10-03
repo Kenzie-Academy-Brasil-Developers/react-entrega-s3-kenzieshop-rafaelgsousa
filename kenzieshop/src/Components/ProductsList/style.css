@@ -1,0 +1,31 @@
+.mercadorias {
+    min-width:310px;
+    max-width: 720px;
+    padding-top: 10px;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FFFFFD;
+    box-sizing: border-box;
+    padding: 0px;
+}
+.produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    margin: 5px auto;
+}
+.produto button {
+    width: 70%;
+    height: 30px;
+    margin: 10px auto;
+}
+.produto img {
+    width: 100px;
+    height: 100px;
+}
