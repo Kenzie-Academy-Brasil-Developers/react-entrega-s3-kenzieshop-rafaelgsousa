@@ -14,6 +14,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     padding-left: 30px;
+    color: #08043C;
 }
 .menu {
     list-style: none; 
@@ -32,4 +33,8 @@ header {
     background-color: #279D86;
     color: white;
     border-radius: 15px;
+}
+li a {
+    text-decoration: none;
+    color: #08043C;
 }

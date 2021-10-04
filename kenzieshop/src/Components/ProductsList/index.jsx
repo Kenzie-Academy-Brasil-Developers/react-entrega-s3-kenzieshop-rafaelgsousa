@@ -20,7 +20,7 @@ const ProductsList=()=>{
             <li key={i} className="produto">
                     <h3>{e.name}</h3>
                     <img src={e.img} alt={e.name}/>
-                    <strong>R$ {(Math.round(e.price/100)*100)
+                    <strong> {(Math.round(e.price/100)*100)
                     .toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</strong>
                     <button onClick={()=>handleAdd(e)}>Add Carrinho</button>
             </li>)}
