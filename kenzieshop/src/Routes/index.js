@@ -2,7 +2,7 @@ import {Switch, Route} from "react-router-dom"
 import ProductsList from "../Components/ProductsList";
 import Cart from "../Components/Carrinho";
 
-function Root(){
+function Routes(){
 
     return <Switch>
             <Route exact path="/">
@@ -14,4 +14,4 @@ function Root(){
         </Switch>
 }
 
-export default Root;
+export default Routes;

@@ -1,5 +1,5 @@
 import './App.css';
-import Root from './Root';
+import Routes from './Routes';
 import Menu from './Components/Menu';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Menu/>
-      <Root/>
+      <Routes/>
     </div>
   );
 }
