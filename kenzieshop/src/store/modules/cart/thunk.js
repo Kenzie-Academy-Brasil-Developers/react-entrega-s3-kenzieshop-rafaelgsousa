@@ -3,11 +3,10 @@ import { addCart,subCart } from "./actions";
 export const addCartThunk = (product)=>(dispatch,getState)=>{
 
     const {cart}=getState()
-    console.log("cart thunk add:",cart)
 
     const update = [product,...cart]
+    
     localStorage.setItem("@CartKenzieshop", JSON.stringify(update))
-    console.log("update add:",update)
 
     dispatch(addCart(update))
 

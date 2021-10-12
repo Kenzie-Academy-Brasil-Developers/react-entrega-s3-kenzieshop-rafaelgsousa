@@ -1,10 +1,13 @@
 import "./style.css";
-import { useSelector } from "react-redux";
+//import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "../../providers/cart";
 
 const Menu=()=>{
 
-    const {cart} = useSelector(state=>state)
+    //const {cart} = useSelector(state=>state)
+    const {cart} = useContext(CartContext)
 
     return (
         <header>

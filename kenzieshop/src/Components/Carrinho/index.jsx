@@ -1,17 +1,21 @@
-import { useSelector } from "react-redux";
+//import { useSelector } from "react-redux";
 import "./style.css";
-import { subCartThunk } from "../../store/modules/cart/thunk";
-import { useDispatch } from "react-redux";
+//import { subCartThunk } from "../../store/modules/cart/thunk";
+//import { useDispatch } from "react-redux";
+import { useContext } from "react";
+import { CartContext } from "../../providers/cart";
 
 const Cart=()=>{
 
-    const dispatch = useDispatch()
+    //const dispatch = useDispatch()
 
-    const cart = useSelector(state=>state.cart)
+    //const cart = useSelector(state=>state.cart)
 
-    const handleSub=(produ)=>{
+    /*const handleSub=(produ)=>{
         dispatch(subCartThunk(produ))
-    }
+    }*/
+
+    const {cart,removeCart} = useContext(CartContext)
 
     return (
         <div className="cart">
@@ -23,7 +27,7 @@ const Cart=()=>{
                         <img src={e.img} alt={e.name}/>
                         <strong>{(e.price)
                         .toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</strong>
-                        <button onClick={()=>handleSub(e)}>Remover</button>
+                        <button onClick={()=>removeCart(e)}>Remover</button>
                     </li>)}    
             </ul>
             <div className="finalizar">
